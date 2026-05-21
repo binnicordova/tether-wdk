@@ -28,6 +28,8 @@ PODS:
     - Yoga
   - ExpoAsset (55.0.17):
     - ExpoModulesCore
+  - ExpoCrypto (55.0.15):
+    - ExpoModulesCore
   - ExpoDomWebView (55.0.6):
     - ExpoModulesCore
   - ExpoFileSystem (55.0.21):
@@ -35,6 +37,8 @@ PODS:
   - ExpoFont (55.0.8):
     - ExpoModulesCore
   - ExpoKeepAwake (55.0.8):
+    - ExpoModulesCore
+  - ExpoLocalAuthentication (55.0.14):
     - ExpoModulesCore
   - ExpoLogBox (55.0.12):
     - React-Core
@@ -71,6 +75,55 @@ PODS:
   - hermes-engine (0.14.1):
     - hermes-engine/Pre-built (= 0.14.1)
   - hermes-engine/Pre-built (0.14.1)
+  - MMKVCore (2.4.0)
+  - NitroMmkv (4.3.1):
+    - hermes-engine
+    - MMKVCore (= 2.4.0)
+    - NitroModules
+    - RCTRequired
+    - RCTTypeSafety
+    - React-callinvoker
+    - React-Core
+    - React-Core-prebuilt
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-jsi
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-renderercss
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - ReactNativeDependencies
+    - Yoga
+  - NitroModules (0.35.7):
+    - hermes-engine
+    - RCTRequired
+    - RCTTypeSafety
+    - React-callinvoker
+    - React-Core
+    - React-Core-prebuilt
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-jsi
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-renderercss
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - ReactNativeDependencies
+    - Yoga
   - RCTDeprecation (0.83.6)
   - RCTRequired (0.83.6)
   - RCTSwiftUI (0.83.6)
@@ -1465,6 +1518,28 @@ PODS:
     - React-RCTFBReactNativeSpec
     - ReactCommon/turbomodule/core
     - ReactNativeDependencies
+  - "react-native-bare-kit (0.12.3+e62e01)":
+    - hermes-engine
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-Core-prebuilt
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-jsi
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-renderercss
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - ReactNativeDependencies
+    - Yoga
   - React-NativeModulesApple (0.83.6):
     - hermes-engine
     - React-callinvoker
@@ -1849,21 +1924,47 @@ PODS:
     - React-utils (= 0.83.6)
     - ReactNativeDependencies
   - ReactNativeDependencies (0.83.6)
+  - RNKeychain (10.0.0):
+    - hermes-engine
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-Core-prebuilt
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-jsi
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-renderercss
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - ReactNativeDependencies
+    - Yoga
   - Yoga (0.0.0)
 
 DEPENDENCIES:
   - EXConstants (from `../node_modules/expo/node_modules/expo-constants/ios`)
   - Expo (from `../node_modules/expo`)
   - ExpoAsset (from `../node_modules/expo/node_modules/expo-asset/ios`)
+  - ExpoCrypto (from `../node_modules/expo-crypto/ios`)
   - "ExpoDomWebView (from `../node_modules/expo/node_modules/@expo/log-box/node_modules/@expo/dom-webview/ios`)"
   - ExpoFileSystem (from `../node_modules/expo/node_modules/expo-file-system/ios`)
   - ExpoFont (from `../node_modules/expo/node_modules/expo-font/ios`)
   - ExpoKeepAwake (from `../node_modules/expo/node_modules/expo-keep-awake/ios`)
+  - ExpoLocalAuthentication (from `../node_modules/expo-local-authentication/ios`)
   - "ExpoLogBox (from `../node_modules/expo/node_modules/@expo/log-box`)"
   - ExpoModulesCore (from `../node_modules/expo-modules-core`)
   - ExpoModulesJSI (from `../node_modules/expo-modules-core`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - hermes-engine (from `../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec`)
+  - NitroMmkv (from `../node_modules/react-native-mmkv`)
+  - NitroModules (from `../node_modules/react-native-nitro-modules`)
   - RCTDeprecation (from `../node_modules/react-native/ReactApple/Libraries/RCTFoundation/RCTDeprecation`)
   - RCTRequired (from `../node_modules/react-native/Libraries/Required`)
   - RCTSwiftUI (from `../node_modules/react-native/ReactApple/RCTSwiftUI`)
@@ -1901,6 +2002,7 @@ DEPENDENCIES:
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
   - React-Mapbuffer (from `../node_modules/react-native/ReactCommon`)
   - React-microtasksnativemodule (from `../node_modules/react-native/ReactCommon/react/nativemodule/microtasks`)
+  - react-native-bare-kit (from `../node_modules/react-native-bare-kit`)
   - React-NativeModulesApple (from `../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios`)
   - React-networking (from `../node_modules/react-native/ReactCommon/react/networking`)
   - React-oscompat (from `../node_modules/react-native/ReactCommon/oscompat`)
@@ -1935,7 +2037,12 @@ DEPENDENCIES:
   - ReactCodegen (from `build/generated/ios/ReactCodegen`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - ReactNativeDependencies (from `../node_modules/react-native/third-party-podspecs/ReactNativeDependencies.podspec`)
+  - RNKeychain (from `../node_modules/react-native-keychain`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
+
+SPEC REPOS:
+  trunk:
+    - MMKVCore
 
 EXTERNAL SOURCES:
   EXConstants:
@@ -1944,6 +2051,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/expo"
   ExpoAsset:
     :path: "../node_modules/expo/node_modules/expo-asset/ios"
+  ExpoCrypto:
+    :path: "../node_modules/expo-crypto/ios"
   ExpoDomWebView:
     :path: "../node_modules/expo/node_modules/@expo/log-box/node_modules/@expo/dom-webview/ios"
   ExpoFileSystem:
@@ -1952,6 +2061,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/expo/node_modules/expo-font/ios"
   ExpoKeepAwake:
     :path: "../node_modules/expo/node_modules/expo-keep-awake/ios"
+  ExpoLocalAuthentication:
+    :path: "../node_modules/expo-local-authentication/ios"
   ExpoLogBox:
     :path: "../node_modules/expo/node_modules/@expo/log-box"
   ExpoModulesCore:
@@ -1963,6 +2074,10 @@ EXTERNAL SOURCES:
   hermes-engine:
     :podspec: "../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec"
     :tag: hermes-v0.14.1
+  NitroMmkv:
+    :path: "../node_modules/react-native-mmkv"
+  NitroModules:
+    :path: "../node_modules/react-native-nitro-modules"
   RCTDeprecation:
     :path: "../node_modules/react-native/ReactApple/Libraries/RCTFoundation/RCTDeprecation"
   RCTRequired:
@@ -2035,6 +2150,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon"
   React-microtasksnativemodule:
     :path: "../node_modules/react-native/ReactCommon/react/nativemodule/microtasks"
+  react-native-bare-kit:
+    :path: "../node_modules/react-native-bare-kit"
   React-NativeModulesApple:
     :path: "../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios"
   React-networking:
@@ -2103,6 +2220,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon"
   ReactNativeDependencies:
     :podspec: "../node_modules/react-native/third-party-podspecs/ReactNativeDependencies.podspec"
+  RNKeychain:
+    :path: "../node_modules/react-native-keychain"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -2110,15 +2229,20 @@ SPEC CHECKSUMS:
   EXConstants: dadbeba983acc30f855a919658a2b34fbd86615d
   Expo: 0f613de6a50f0bb5e86de668daa9c3f247e05bb4
   ExpoAsset: 7721c5c4ae2a7c3c8147a046727ac6c020b05648
+  ExpoCrypto: e7f4a14eaa6d6a6a2196cd7391d171c84be0b1aa
   ExpoDomWebView: b2e9d601f9cb77d3c97da73234e175b64be91928
   ExpoFileSystem: 60d1020c4533ca9d8e9ca6b98d4e719c3e8185b2
   ExpoFont: a7e34a75bdfb703fa07a0e87807f836236608c76
   ExpoKeepAwake: d0eb7a0719500d2a43fbf29b6f79e84d70c75ebf
+  ExpoLocalAuthentication: 2d4533756d4d0673739ed2045435b6c62ad3d443
   ExpoLogBox: a678d36477ab9544fe63e0b5328a0716539b6774
   ExpoModulesCore: 998d0fbf7f687b1ff715b87cec779fc92be628ac
   ExpoModulesJSI: 964334271fc77832736f66ee1785761cdc778dbe
   FBLazyVector: 427fa1856a481856091061293ce865a75aa4f20f
   hermes-engine: 5f0525b255adff641ec19e7059cdc06a612ab2a9
+  MMKVCore: 3d16ce9f7d411e135020915fde98a056859a1efa
+  NitroMmkv: 7a7572934538ba6748e05dffc6ee8b06caad91cc
+  NitroModules: 7c1ceb459880fd15ba769155046d00fabf8d3258
   RCTDeprecation: 9502b5eb8e3c9eb75ff5a333b2c591bab9d91e28
   RCTRequired: 0268a5d86aef1defea2e04289d74fdf3570197c1
   RCTSwiftUI: cff211c5e4d94e491dda240d663b8effd25296d7
@@ -2155,6 +2279,7 @@ SPEC CHECKSUMS:
   React-logger: 702a49dadb10a6bd63d56b297c3350b5ea552141
   React-Mapbuffer: bcd9f00a498b2981c7b390f00fd2b7cd6e0ead29
   React-microtasksnativemodule: 203b41906d627dac7d697bccba6137b630951fae
+  react-native-bare-kit: ccdb736f3400b33c95b0422c4ba3316d4e385c53
   React-NativeModulesApple: 9068613f7650828eed29ead6fc0d0a1620117e6a
   React-networking: 233dd85e1b890ca191f64f0896153165571b3039
   React-oscompat: 05afae2c7689405dbb4f6458110d501d55357980
@@ -2189,6 +2314,7 @@ SPEC CHECKSUMS:
   ReactCodegen: 169fa6c4ad3c3065f98fa2364bf95e9a21c3afec
   ReactCommon: ba28cd4e7d9e24014d2772a80e32da020c732b00
   ReactNativeDependencies: 41efbbb897be0227618d4f7f8af5d1b714861467
+  RNKeychain: 667b7bd224f14055ae4cb52b41a82ad0ad70574f
   Yoga: e41d64347f52d634dd8c2f6bac33f95081959fd3
 
 PODFILE CHECKSUM: a662ecac2416afc8d31b6547bbdc899b440493fe
